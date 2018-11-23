@@ -16,8 +16,9 @@
                     <property name="backups" value="1"/>
 
                 </bean>
-                   
-                   <bean class="org.apache.ignite.configuration.IgniteConfiguration">
+                    </list>
+        </property>
+             <bean class="org.apache.ignite.configuration.IgniteConfiguration">
   <!-- Enabling Apache Ignite native persistence. -->
   <property name="dataStorageConfiguration">
     <bean class="org.apache.ignite.configuration.DataStorageConfiguration">
@@ -28,9 +29,11 @@
       </property>
     </bean>
   </property>
-                          </bean>
-            </list>
-        </property>
+  
+  <!-- Additional setting. -->
+ 
+</bean>
+           
 
         <!-- Explicitly configure TCP discovery SPI to provide list of initial nodes. -->
         <property name="discoverySpi">
