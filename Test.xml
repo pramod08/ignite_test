@@ -44,6 +44,9 @@
                     <property name="name" value="default"/>
                     <property name="atomicityMode" value="ATOMIC"/>
                     <property name="backups" value="1"/>
+                    <property name="workDirectory" value="/opt/ignite/apache-ignite-fabric/work" />
+                    <property name="persistenceEnabled" value="true"/>
+
                 </bean>
             </list>
         </property>
