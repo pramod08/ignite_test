@@ -28,7 +28,7 @@
                     <bean class="org.apache.ignite.configuration.DataRegionConfiguration">
                         <property name="persistenceEnabled" value="true"/>
 			     <!-- Setting the page size to 4 KB -->
-            		<property name="pageSize" value="#{4 * 1024}"/>
+            		<property name="pageSize" value="#{2 * 1024}"/>
                     </bean>
                 </property>
             </bean>
