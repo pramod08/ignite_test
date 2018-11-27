@@ -39,7 +39,7 @@
                 <!-- <property name="storagePath" value="/mnt/althingprod-ignite"/> -->
 				<!-- <property name="walPath" value="/mnt/"/> -->
 	             <!-- Enable write throttling. -->
-	       <property name="writeThrottlingEnabled" value="true" />
+	     <!--  <property name="writeThrottlingEnabled" value="true" />
 		  <!--<property name="pageSize" value="8192"/>	   
                
                 <property name="walMode" value="FSYNC" />-->
