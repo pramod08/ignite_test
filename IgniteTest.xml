@@ -32,18 +32,19 @@
         http://www.springframework.org/schema/beans/spring-beans.xsd">
     <bean id="ignite.cfg" class="org.apache.ignite.configuration.IgniteConfiguration">
         <property name="cacheConfiguration">
+		
             <list>
                 <!-- Partitioned cache example configuration (Atomic mode). -->
                 <bean class="org.apache.ignite.configuration.CacheConfiguration">
                     <property name="name" value="default"/>
                     <property name="atomicityMode" value="ATOMIC"/>
                     <property name="backups" value="1"/>
-                    <property name="storagePath" value="/opt/ignite/apache-ignite-fabric/work" />
                     <property name="persistenceEnabled" value="true"/>
 
                 </bean>
             </list>
         </property>
+	    <property name="workDirectory" value="/opt/ignite/apache-ignite-fabric/work" />
 
         <!-- Explicitly configure TCP discovery SPI to provide list of initial nodes. -->
         <property name="discoverySpi">
