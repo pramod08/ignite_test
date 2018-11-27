@@ -24,7 +24,7 @@
     <bean id="ignite.cfg" class="org.apache.ignite.configuration.IgniteConfiguration">
         <!-- Enabling Apache Ignite Persistent Store. -->
 <!--<property name="consistentId" value="node00-c0a1c2a2-d953-494a-a31c-5d072ae2fb27" />  -->
-     
+     <property name="workDirectory" value="/opt/ignite/apache-ignite-fabric/work" /> 
 		<property name="dataStorageConfiguration">
             <bean class="org.apache.ignite.configuration.DataStorageConfiguration">
                 <property name="defaultDataRegionConfiguration">
@@ -35,7 +35,7 @@
 		<!--	 <property name="maxSize" value="#{16L * 1024 * 1024 * 1024}"/> -->		
                     </bean>
                 </property>
-				 <property name="workDirectory" value="/opt/ignite/apache-ignite-fabric/work" /> 
+				 
                 <!-- <property name="storagePath" value="/mnt/althingprod-ignite"/> -->
 				<!-- <property name="walPath" value="/mnt/"/> -->
 	             <!-- Enable write throttling. -->
