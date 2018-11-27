@@ -23,8 +23,8 @@
         http://www.springframework.org/schema/beans/spring-beans.xsd">
     <bean id="ignite.cfg" class="org.apache.ignite.configuration.IgniteConfiguration">
         <!-- Enabling Apache Ignite Persistent Store. -->
-<!--<property name="consistentId" value="node00-c0a1c2a2-d953-494a-a31c-5d072ae2fb27" />  -->
-     <property name="workDirectory" value="/opt/ignite/apache-ignite-fabric/work" /> 
+
+     <!--<property name="workDirectory" value="/opt/ignite/apache-ignite-fabric/work" /> 
 		<property name="dataStorageConfiguration">
             <bean class="org.apache.ignite.configuration.DataStorageConfiguration">
                 <property name="defaultDataRegionConfiguration">
@@ -32,18 +32,10 @@
                         <property name="persistenceEnabled" value="true"/>
 			   <!-- Increasing the buffer size to 1 GB. -->
 			<property name="checkpointPageBufferSize" value="#{1024L * 1024 * 1024}"/>
-		<!--	 <property name="maxSize" value="#{16L * 1024 * 1024 * 1024}"/> -->		
+				
                     </bean>
                 </property>
-				 
-                <!-- <property name="storagePath" value="/mnt/althingprod-ignite"/> -->
-				<!-- <property name="walPath" value="/mnt/"/> -->
-	             <!-- Enable write throttling. -->
-	       <property name="writeThrottlingEnabled" value="true" />
-		  <property name="pageSize" value="8192"/>	    
-               
-                <property name="walMode" value="FSYNC" />
-            </bean>
+				            </bean>
         </property>
         <property name="failureDetectionTimeout" value="60000" />
         <property name="networkTimeout" value="60000" />
@@ -73,6 +65,3 @@
       </property>
     </bean>
 </beans>
-
-
-
