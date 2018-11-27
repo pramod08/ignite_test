@@ -40,9 +40,9 @@
 				<!-- <property name="walPath" value="/mnt/"/> -->
 	             <!-- Enable write throttling. -->
 	       <property name="writeThrottlingEnabled" value="true" />
-		  <property name="pageSize" value="8192"/>	    
+		  <!--<property name="pageSize" value="8192"/>	   
                
-                <property name="walMode" value="FSYNC" />
+                <property name="walMode" value="FSYNC" />-->
             </bean>
         </property>
         <property name="failureDetectionTimeout" value="60000" />
