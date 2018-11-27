@@ -24,7 +24,7 @@
     <bean id="ignite.cfg" class="org.apache.ignite.configuration.IgniteConfiguration">
         <!-- Enabling Apache Ignite Persistent Store. -->
 
-     <!--<property name="workDirectory" value="/opt/ignite/apache-ignite-fabric/work" /> 
+     <!--<property name="workDirectory" value="/opt/ignite/apache-ignite-fabric/work" /> -->
 		<property name="dataStorageConfiguration">
             <bean class="org.apache.ignite.configuration.DataStorageConfiguration">
                 <property name="defaultDataRegionConfiguration">
